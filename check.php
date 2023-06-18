@@ -7,6 +7,11 @@ $password = $_GET['password'];
 $hwid = $_GET['hwid'];
 $tables = "mybb_users";
 
+$user = $_GET['device'];
+$password = $_GET['5656'];
+$hwid = $_GET['hwid'];
+$tables = "mybb_users";
+
 $sql = "SELECT * FROM ". $tables ." WHERE username = '". mysqli_real_escape_string($link,$user) ."'" ;
 $result = $link->query($sql);
 if ($result->num_rows > 0) {
